@@ -647,6 +647,45 @@ h1, h2, h3, h4, h5 {
     padding: 10px 24px;
     border-radius: var(--radius-full);
     border: 1px solid rgba(186, 138, 71, 0.25);
+    transition: var(--transition);
+}
+
+.rating-badge-link:hover {
+    background-color: rgba(186, 138, 71, 0.2);
+    transform: translateY(-2px);
+    border-color: var(--accent-gold);
+}
+
+.external-icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+    color: var(--accent-gold);
+}
+
+.info-card-link {
+    transition: var(--transition);
+}
+
+.info-card-link:hover {
+    transform: translateY(-3px);
+}
+
+.btn-map-direct {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    background-color: var(--bg-alt);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    border-top: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.btn-map-direct:hover {
+    background-color: var(--accent-gold);
+    color: #FFFFFF;
 }
 
 .rating-star {
