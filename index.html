@@ -44,8 +44,14 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Friday", "Saturday", "Sunday"],
+          "dayOfWeek": ["Friday", "Monday", "Tuesday", "Wednesday"],
           "opens": "07:30",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "07:00",
           "closes": "18:00"
         }
       ],
@@ -157,7 +163,7 @@
                 </div>
                 <div class="info-text">
                     <span class="info-label" data-i18n="info_hours_title">Openingstijden</span>
-                    <strong class="info-value" data-i18n="info_hours_val">Vr - Zo: 07:30 – 18:00<br>(Ma - Do: Gesloten)</strong>
+                    <strong class="info-value" data-i18n="info_hours_val">Vr - Di: 07:30 – 18:00 (Za-Zo 07:00)<br>(Donderdag: Gesloten)</strong>
                 </div>
             </div>
 
