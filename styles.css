@@ -490,10 +490,47 @@ h1, h2, h3, h4, h5 {
     opacity: 0.8;
 }
 
-.popular-grid {
+.popular-grid-5 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.fb-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #1877F2;
+    background-color: #E7F3FF;
+    padding: 2px 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(24, 119, 242, 0.2);
+}
+
+.fb-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.rating-dual-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.fb-rating-badge {
+    background-color: rgba(24, 119, 242, 0.08);
+    border-color: rgba(24, 119, 242, 0.25);
+}
+
+.fb-rating-badge:hover {
+    background-color: rgba(24, 119, 242, 0.16);
+    border-color: #1877F2;
+}
+
+.fb-thumb {
+    font-size: 1.1rem;
 }
 
 .menu-card {
