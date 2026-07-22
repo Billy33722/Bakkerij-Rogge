@@ -104,6 +104,7 @@ const categoryMenuData = {
             sub: "Vers bereid met seizoensfruit en romige vulling",
             items: [
                 { name: "Verse Aardbeientaart (Strawberry Cake)", desc: "Met verse Belgische aardbeien, banketbakkersroom en knapperige bodem", price: "€ 4.50 / slice (€ 24.00 heel)" },
+                { name: "Lekkere Valeietaart (Streekproduct)", desc: "Traditionele lokale streektaart uit Eine / Oudenaarde", price: "€ 3.80 / slice" },
                 { name: "Frambozentaart (Raspberry Cake)", desc: "Verse frambozen op lichte vanillecrème", price: "€ 4.80 / slice" },
                 { name: "Klassieke Belgische Eclair", desc: "Gevuld met romige pudding en chocoladeglazuur", price: "€ 2.80" },
                 { name: "Appeltaart met Amandel", desc: "Warme gekruide appeltjes in ambachtelijk deeg", price: "€ 3.50" }
@@ -114,6 +115,7 @@ const categoryMenuData = {
             sub: "Freshly prepared with seasonal berries and light cream",
             items: [
                 { name: "Fresh Strawberry Cake", desc: "Fresh Belgian strawberries, custard cream, and crispy crust", price: "€ 4.50 / slice (€ 24.00 whole)" },
+                { name: "Traditional Valeie Pie (Local Specialty)", desc: "Famous local recipe pie from Eine / Oudenaarde", price: "€ 3.80 / slice" },
                 { name: "Fresh Raspberry Cake", desc: "Fresh raspberries on light vanilla cream", price: "€ 4.80 / slice" },
                 { name: "Classic Belgian Eclair", desc: "Filled with rich custard and chocolate glaze", price: "€ 2.80" },
                 { name: "Almond Apple Pie", desc: "Spiced apples wrapped in artisan pastry dough", price: "€ 3.50" }
@@ -122,43 +124,47 @@ const categoryMenuData = {
     },
     brood: {
         nl: {
-            title: "Vers Brood",
+            title: "Vers Brood & Pistolets",
             sub: "Ambachtelijk gebakken elke ochtend om 07:30",
             items: [
+                { name: "Adrien Brouwer Brood (Specialiteit)", desc: "Exclusief ambachtelijk streekbrood van Bakkerij Rogge", price: "€ 3.40" },
+                { name: "Ambachtelijk Zuurdeegbrood", desc: "100% natuurlijk zuurdeeg, langzaam gerezen met knapperige korst", price: "€ 3.20" },
                 { name: "Traditioneel Boerenbrood (Wit / Bruin)", desc: "Klassiek Eine brood met een knapperige korst", price: "€ 2.60" },
-                { name: "Volkoren Zuurdeegbrood", desc: "100% natuurlijk zuurdeeg, langzaam gerezen", price: "€ 3.20" },
-                { name: "Franse Stokbrood (Baguette)", desc: "Dagelijks vers gebakken knapperige Franse baguette", price: "€ 1.50" },
-                { name: "Luchtige Croissants (Set van 2)", desc: "Roomboter croissants, goudbruin gebakken", price: "€ 2.40" }
+                { name: "Knapperige Franse Pistolets & Baguettes", desc: "Dagelijks vers gebakken pistolets en baguette", price: "€ 0.90 - € 1.50" },
+                { name: "Luchtige Boter croissants (Set van 2)", desc: "Echte roomboter croissants, goudbruin gebakken", price: "€ 2.40" }
             ]
         },
         en: {
-            title: "Fresh Artisan Bread",
+            title: "Fresh Artisan Bread & Rolls",
             sub: "Baked fresh every morning from 07:30",
             items: [
+                { name: "Adrien Brouwer Special Loaf", desc: "Exclusive local artisan specialty bread of Bakery Rogge", price: "€ 3.40" },
+                { name: "Natural Sourdough Loaf", desc: "100% natural sourdough, slowly fermented with crispy crust", price: "€ 3.20" },
                 { name: "Traditional Farmhouse Loaf (White / Brown)", desc: "Classic Eine bread with a crispy golden crust", price: "€ 2.60" },
-                { name: "Whole Grain Sourdough", desc: "100% natural sourdough, slowly fermented", price: "€ 3.20" },
-                { name: "French Baguette", desc: "Crusty traditional French baguette", price: "€ 1.50" },
+                { name: "Crispy Crust Rolls (Pistolets) & Baguettes", desc: "Freshly baked rolls and French baguette", price: "€ 0.90 - € 1.50" },
                 { name: "Fluffy Butter Croissants (2 pcs)", desc: "Baked with real Belgian butter until golden", price: "€ 2.40" }
             ]
         }
     },
     snacks: {
         nl: {
-            title: "Gebak & Hartige Snacks",
-            sub: "Warme quiches, verse pizza en hartige lekkernijen",
+            title: "Gebak, Hartige Snacks & Beleg",
+            sub: "Warme quiches, verse pizza en vers broodbeleg",
             items: [
-                { name: "Huisgemaakte Quiche Lorraine / Spinaat", desc: "Met spekjes of verse spinazie & geitenkaas", price: "€ 4.20 / slice" },
+                { name: "Huisgemaakte Quiche Lorraine / Spinazie", desc: "Met spekjes of verse spinazie & geitenkaas", price: "€ 4.20 / slice" },
                 { name: "Ambachtelijke Pizza Punt (Margherita / Salami)", desc: "Krokante dunne bodem met verse tomatensaus", price: "€ 3.80" },
+                { name: "Vers Broodbeleg & Fijne Vleeswaren", desc: "Groot assortiment dagvers beleg en Belgische kaas", price: "€ 2.50 - € 4.50" },
                 { name: "Warm Worstenbroodje", desc: "Bladerdeeg gevuld met gekruid gehakt", price: "€ 2.50" },
                 { name: "Kaas- & Hamcroissant", desc: "Gevuld met Belgische kaas en gebraden ham", price: "€ 2.90" }
             ]
         },
         en: {
-            title: "Pastries & Savory Snacks",
-            sub: "Hot quiches, fresh pizza, and savory treats",
+            title: "Pastries, Savory Snacks & Toppings",
+            sub: "Hot quiches, fresh pizza, and fresh sandwich toppings",
             items: [
                 { name: "Homemade Quiche (Lorraine / Spinach)", desc: "With bacon or fresh spinach & goat cheese", price: "€ 4.20 / slice" },
                 { name: "Artisan Pizza Slice (Margherita / Salami)", desc: "Crispy thin crust topped with fresh tomato sauce", price: "€ 3.80" },
+                { name: "Fresh Sandwich Fillings & Cold Cuts", desc: "Wide selection of fresh cheeses and savory toppings", price: "€ 2.50 - € 4.50" },
                 { name: "Belgian Sausage Roll", desc: "Flaky puff pastry stuffed with seasoned meat", price: "€ 2.50" },
                 { name: "Ham & Cheese Croissant", desc: "Filled with rich Belgian cheese and oven-baked ham", price: "€ 2.90" }
             ]
