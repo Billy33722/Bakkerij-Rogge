@@ -98,75 +98,137 @@ const translations = {
 
 // Detailed category items for Modal popup
 const categoryMenuData = {
-    taarten: {
-        nl: {
-            title: "Taarten & Desserts",
-            sub: "Vers bereid met seizoensfruit en romige vulling",
-            items: [
-                { name: "Verse Aardbeientaart (Strawberry Cake)", desc: "Met verse Belgische aardbeien, banketbakkersroom en knapperige bodem", price: "€ 4.50 / slice (€ 24.00 heel)" },
-                { name: "Lekkere Valeietaart (Streekproduct)", desc: "Traditionele lokale streektaart uit Eine / Oudenaarde", price: "€ 3.80 / slice" },
-                { name: "Frambozentaart (Raspberry Cake)", desc: "Verse frambozen op lichte vanillecrème", price: "€ 4.80 / slice" },
-                { name: "Klassieke Belgische Eclair", desc: "Gevuld met romige pudding en chocoladeglazuur", price: "€ 2.80" },
-                { name: "Appeltaart met Amandel", desc: "Warme gekruide appeltjes in ambachtelijk deeg", price: "€ 3.50" }
-            ]
-        },
-        en: {
-            title: "Cakes & Desserts",
-            sub: "Freshly prepared with seasonal berries and light cream",
-            items: [
-                { name: "Fresh Strawberry Cake", desc: "Fresh Belgian strawberries, custard cream, and crispy crust", price: "€ 4.50 / slice (€ 24.00 whole)" },
-                { name: "Traditional Valeie Pie (Local Specialty)", desc: "Famous local recipe pie from Eine / Oudenaarde", price: "€ 3.80 / slice" },
-                { name: "Fresh Raspberry Cake", desc: "Fresh raspberries on light vanilla cream", price: "€ 4.80 / slice" },
-                { name: "Classic Belgian Eclair", desc: "Filled with rich custard and chocolate glaze", price: "€ 2.80" },
-                { name: "Almond Apple Pie", desc: "Spiced apples wrapped in artisan pastry dough", price: "€ 3.50" }
-            ]
-        }
-    },
     brood: {
         nl: {
-            title: "Vers Brood & Pistolets",
-            sub: "Ambachtelijk gebakken elke ochtend om 07:30",
+            title: "Desembroden & Specialiteiten",
+            sub: "Authentieke desembroodsoorten met natuurlijk karakter",
             items: [
-                { name: "Adrien Brouwer Brood (Specialiteit)", desc: "Exclusief ambachtelijk streekbrood van Bakkerij Rogge", price: "€ 3.40" },
-                { name: "Ambachtelijk Zuurdeegbrood", desc: "100% natuurlijk zuurdeeg, langzaam gerezen met knapperige korst", price: "€ 3.20" },
-                { name: "Traditioneel Boerenbrood (Wit / Bruin)", desc: "Klassiek Eine brood met een knapperige korst", price: "€ 2.60" },
-                { name: "Knapperige Franse Pistolets & Baguettes", desc: "Dagelijks vers gebakken pistolets en baguette", price: "€ 0.90 - € 1.50" },
-                { name: "Luchtige Boter croissants (Set van 2)", desc: "Echte roomboter croissants, goudbruin gebakken", price: "€ 2.40" }
+                { name: "Assortiment Focaccia (Provenciaals / Tomaat-Olijf / Spek-Ajuin)", desc: "Met extra vierge olijfolie, kruiden en hartige toppings", price: "€ 3.50" },
+                { name: "Twist Tapenade Basilicum & Broodje Chorizo", desc: "Aperitiefbrood met rode wijn Navarra en chorizo", price: "€ 3.80" },
+                { name: "Kurkuma Desembrood", desc: "Met hazelnoten uit Piemonte", price: "€ 3.60" },
+                { name: "Sepia Inktvisbrood", desc: "Met gedroogde veenbessen", price: "€ 3.80" },
+                { name: "Notenstangen", desc: "Met krokante hazelnoten en rozijntjes", price: "€ 3.20" },
+                { name: "Kroon Desembrood", desc: "Ambachtelijk zuurdeegbrood met heerlijk krokante korst", price: "€ 3.10" },
+                { name: "Deens Zemelenbroodje (60% Zaad)", desc: "Gebakken in traditioneel houten bakje", price: "€ 3.50" },
+                { name: "Rogge Verdomme", desc: "Grijs desembroodje rijk gevuld met krenten", price: "€ 3.40" },
+                { name: "Alpenbrood", desc: "Desembrood met geroosterde zadenmengeling", price: "€ 3.30" },
+                { name: "Franse Brioche in Bakje", desc: "Zacht zoet brood met vijgen, walnoten, abrikozen en rozijnen", price: "€ 3.90" }
             ]
         },
         en: {
-            title: "Fresh Artisan Bread & Rolls",
-            sub: "Baked fresh every morning from 07:30",
+            title: "Sourdough Breads & Specialties",
+            sub: "Authentic sourdough varieties with natural character",
             items: [
-                { name: "Adrien Brouwer Special Loaf", desc: "Exclusive local artisan specialty bread of Bakery Rogge", price: "€ 3.40" },
-                { name: "Natural Sourdough Loaf", desc: "100% natural sourdough, slowly fermented with crispy crust", price: "€ 3.20" },
-                { name: "Traditional Farmhouse Loaf (White / Brown)", desc: "Classic Eine bread with a crispy golden crust", price: "€ 2.60" },
-                { name: "Crispy Crust Rolls (Pistolets) & Baguettes", desc: "Freshly baked rolls and French baguette", price: "€ 0.90 - € 1.50" },
-                { name: "Fluffy Butter Croissants (2 pcs)", desc: "Baked with real Belgian butter until golden", price: "€ 2.40" }
+                { name: "Focaccia Assortment (Herbs / Tomato-Olive / Bacon-Onion)", desc: "Baked with extra virgin olive oil and savory toppings", price: "€ 3.50" },
+                { name: "Basil Tapenade Twist & Chorizo Roll", desc: "Aperitif bread with Navarra red wine and chorizo", price: "€ 3.80" },
+                { name: "Turmeric Sourdough", desc: "Enriched with roasted Piemonte hazelnuts", price: "€ 3.60" },
+                { name: "Sepia Squid Ink Loaf", desc: "With dried cranberries", price: "€ 3.80" },
+                { name: "Hazelnut & Raisin Sticks (Notenstangen)", desc: "Packed with crunchy hazelnuts and sweet raisins", price: "€ 3.20" },
+                { name: "Kroon Artisan Sourdough", desc: "Traditional sourdough with a golden crispy crust", price: "€ 3.10" },
+                { name: "Danish Bran Loaf (60% Seeds)", desc: "Baked in a traditional wooden baking box", price: "€ 3.50" },
+                { name: "Rogge Verdomme", desc: "Traditional grey sourdough filled with sweet raisins", price: "€ 3.40" },
+                { name: "Alpine Seed Bread", desc: "Sourdough loaf topped with roasted seed mix", price: "€ 3.30" },
+                { name: "French Brioche Box", desc: "Sweet soft brioche with figs, walnuts, apricots and raisins", price: "€ 3.90" }
             ]
         }
     },
-    snacks: {
+    feestgebak: {
         nl: {
-            title: "Gebak, Hartige Snacks & Beleg",
-            sub: "Warme quiches, verse pizza en vers broodbeleg",
+            title: "Feestgebak & Klassiekers",
+            sub: "Exclusieve ambachtelijke taarten voor elk feest",
             items: [
-                { name: "Huisgemaakte Quiche Lorraine / Spinazie", desc: "Met spekjes of verse spinazie & geitenkaas", price: "€ 4.20 / slice" },
-                { name: "Ambachtelijke Pizza Punt (Margherita / Salami)", desc: "Krokante dunne bodem met verse tomatensaus", price: "€ 3.80" },
-                { name: "Vers Broodbeleg & Fijne Vleeswaren", desc: "Groot assortiment dagvers beleg en Belgische kaas", price: "€ 2.50 - € 4.50" },
-                { name: "Warm Worstenbroodje", desc: "Bladerdeeg gevuld met gekruid gehakt", price: "€ 2.50" },
-                { name: "Kaas- & Hamcroissant", desc: "Gevuld met Belgische kaas en gebraden ham", price: "€ 2.90" }
+                { name: "Samba (De Klassieker)", desc: "Lichte mousse van melk- en fondant chocolade", price: "€ 4.50 / slice (€ 24.00 heel)" },
+                { name: "Valérie (Onze Klassieker)", desc: "Lekkere lokale streektaart uit Eine", price: "€ 3.80 / slice" },
+                { name: "Zwarte Woud (Black Forest)", desc: "Chocoladecrème, vanille slagroom, chocoladebiscuit & kersen", price: "€ 4.20 / slice" },
+                { name: "Passie", desc: "Krokantje met amandelbiscuit, mousse van mango-passie & piëmontecrème", price: "€ 4.60 / slice" },
+                { name: "Caramelle (Nieuw)", desc: "Caramel crémeux, mousse van Jivara chocolade op krokante bodem", price: "€ 4.80 / slice" },
+                { name: "Doménica (Nieuw)", desc: "Dominicaanse chocolade, vanille van Madagascar & bosvruchten", price: "€ 4.90 / slice" },
+                { name: "Slagroom & Fruit", desc: "Luchtige biscuit met ananas en verse frambozen", price: "€ 4.20 / slice" }
             ]
         },
         en: {
-            title: "Pastries, Savory Snacks & Toppings",
-            sub: "Hot quiches, fresh pizza, and fresh sandwich toppings",
+            title: "Celebration Cakes & Classics",
+            sub: "Exclusive handcrafted specialty cakes for special occasions",
             items: [
-                { name: "Homemade Quiche (Lorraine / Spinach)", desc: "With bacon or fresh spinach & goat cheese", price: "€ 4.20 / slice" },
-                { name: "Artisan Pizza Slice (Margherita / Salami)", desc: "Crispy thin crust topped with fresh tomato sauce", price: "€ 3.80" },
-                { name: "Fresh Sandwich Fillings & Cold Cuts", desc: "Wide selection of fresh cheeses and savory toppings", price: "€ 2.50 - € 4.50" },
-                { name: "Belgian Sausage Roll", desc: "Flaky puff pastry stuffed with seasoned meat", price: "€ 2.50" },
-                { name: "Ham & Cheese Croissant", desc: "Filled with rich Belgian cheese and oven-baked ham", price: "€ 2.90" }
+                { name: "Samba (The Classic)", desc: "Light milk and dark chocolate mousse cake", price: "€ 4.50 / slice (€ 24.00 whole)" },
+                { name: "Valérie (Bakery Classic)", desc: "Famous traditional specialty cake from Eine", price: "€ 3.80 / slice" },
+                { name: "Black Forest (Zwarte Woud)", desc: "Chocolate cream, vanilla whipped cream, chocolate sponge & cherries", price: "€ 4.20 / slice" },
+                { name: "Passie (Mango & Passion Fruit)", desc: "Crispy almond biscuit with mango-passion mousse & Piemonte cream", price: "€ 4.60 / slice" },
+                { name: "Caramelle (New)", desc: "Caramel crémeux, Jivara chocolate mousse on hazelnut crunchy base", price: "€ 4.80 / slice" },
+                { name: "Doménica (New)", desc: "Dominican dark chocolate, Madagascar vanilla & forest berries", price: "€ 4.90 / slice" },
+                { name: "Whipped Cream & Fruit", desc: "Light sponge cake with pineapple and fresh raspberries", price: "€ 4.20 / slice" }
+            ]
+        }
+    },
+    versnaperingen: {
+        nl: {
+            title: "Versnaperingen & Petit-Fours",
+            sub: "Koffiegebak, mini-gebakjes en luxe lekkernijen",
+            items: [
+                { name: "Petit-Fours (Boterroom / Marsepein)", desc: "Ambachtelijke mini-gebakjes in verscheidene variaties en kleuren", price: "€ 1.80 / pc" },
+                { name: "Mini-Gebak (Misérable / Javanais / Mousse)", desc: "Framboos-passie mousse, chocopotje, caramelle", price: "€ 2.20 / pc" },
+                { name: "Drooggebak (Eclairs / Boule de Berlin)", desc: "Gevuld met romige pudding, confituur en chocolade", price: "€ 2.60" },
+                { name: "Citroentarteletje", desc: "Zure citroencrème op brosse deegbodem", price: "€ 3.20" },
+                { name: "Zoetigheden voor bij de Koffie", desc: "Pâte de fruits, macarons, truffels, Canelé de Bordeaux, Tartine Russe", price: "€ 6.50 / doosje" }
+            ]
+        },
+        en: {
+            title: "Sweet Treats & Petit-Fours",
+            sub: "Coffee pastries, mini desserts and luxury sweets",
+            items: [
+                { name: "Petit-Fours (Buttercream / Marzipan)", desc: "Handcrafted mini cakes in colorful assortments", price: "€ 1.80 / pc" },
+                { name: "Mini Pastries (Misérable / Javanais / Mousse)", desc: "Raspberry-passion mousse, chocolate pot, caramel", price: "€ 2.20 / pc" },
+                { name: "Classic Pastries (Eclairs / Berlin Balls)", desc: "Filled with rich custard cream, jam and chocolate", price: "€ 2.60" },
+                { name: "Lemon Tartlet (Citroentarteletje)", desc: "Tangy lemon curd in shortcrust pastry", price: "€ 3.20" },
+                { name: "Coffee Sweet Selection", desc: "Pâte de fruits, macarons, truffles, Canelé de Bordeaux, Tartine Russe", price: "€ 6.50 / box" }
+            ]
+        }
+    },
+    hartig: {
+        nl: {
+            title: "Hartig, Quiches & Pizza Pavé",
+            sub: "Warme hapjes, verse pizza's, quiches en soepen",
+            items: [
+                { name: "Huisbereide Quiche (Lorraine / Zalm-Broccoli / Geitenkaas-Appel)", desc: "Met spekjes, gerookte zalm, geitenkaas of kip met fijne groentjes", price: "€ 4.50 / slice" },
+                { name: "Pizza Pavé (Classique / Chorizo / Grieks)", desc: "Krokante bodem met tapenade, mozzarella, chorizo of fêtablokjes", price: "€ 4.20" },
+                { name: "Warme Bladerdeeghapjes (Apero Assortiment)", desc: "4 kazen rondel, videetje garnaal, hartje zalm, kaas-hesp", price: "€ 6.80 / set" },
+                { name: "Huisbereide Mousses & Tapenades", desc: "Ham-mousse, zalm-mousse & gedroogde tomatentapenade voor focaccia", price: "€ 3.50" },
+                { name: "Ambachtelijke Soepen (Tomatensoep / Waterkers / Bospaddenstoelen)", desc: "Verse warme soep met balletjes of witloof", price: "€ 3.80 / L" }
+            ]
+        },
+        en: {
+            title: "Savory, Quiches & Pizza Pavé",
+            sub: "Hot appetizers, fresh pizzas, quiches and soups",
+            items: [
+                { name: "Homemade Quiche (Lorraine / Salmon-Broccoli / Goat Cheese)", desc: "With bacon, smoked salmon, goat cheese & apple or chicken", price: "€ 4.50 / slice" },
+                { name: "Pizza Pavé (Classic / Chorizo / Greek)", desc: "Crispy crust topped with tapenade, mozzarella, chorizo or feta", price: "€ 4.20" },
+                { name: "Warm Puff Pastry Bites (Apero Set)", desc: "4 cheese round, shrimp bites, salmon hearts, ham-cheese blossom", price: "€ 6.80 / set" },
+                { name: "Homemade Mousses & Tomato Tapenade", desc: "Ham mousse, smoked salmon mousse & dried tomato tapenade for focaccia", price: "€ 3.50" },
+                { name: "Artisan Soups (Tomato meatballs / Watercress / Mushroom)", desc: "Fresh hot soup made daily", price: "€ 3.80 / L" }
+            ]
+        }
+    },
+    ijs: {
+        nl: {
+            title: "Ambachtelijk IJs & Sorbet",
+            sub: "Huisbereide ijs-taarten, sorbets en bekers",
+            items: [
+                { name: "Amarena Pistache IJstaart (Nieuw)", desc: "Pistacheroomijs, kensorbet, Amarenakersen & amandelbiscuit (4-8 pers)", price: "€ 18.00 - € 28.00" },
+                { name: "Iglo / Egel IJstaart", desc: "Vanilleroomijs, stracciatella, sorbet framboos & exotique (4-10 pers)", price: "€ 16.00 - € 26.00" },
+                { name: "Hazelnoot Caramel & Vacherin", desc: "Hazelnootijs, geroosterde Piemonte hazelnoten & meringue", price: "€ 18.00" },
+                { name: "Ambachtelijk Sorbet (1/2 L)", desc: "Vers fruit sorbet: Exotique, framboos, kersen", price: "€ 6.50" },
+                { name: "Ambachtelijk Roomijs (1/2 L - 1 L)", desc: "Aardbei, stracciatella, mokka, pistache, chocolade, vanille", price: "€ 6.50 - € 11.00" }
+            ]
+        },
+        en: {
+            title: "Artisan Ice Cream & Sorbet",
+            sub: "Homemade ice cream cakes, sorbets and cups",
+            items: [
+                { name: "Amarena Pistachio Ice Cream Cake (New)", desc: "Pistachio ice cream, cherry sorbet, Amarena cherries & biscuit (4-8 p)", price: "€ 18.00 - € 28.00" },
+                { name: "Iglo / Hedgehog Ice Cream Cake", desc: "Vanilla ice cream, stracciatella, raspberry & exotic sorbet (4-10 p)", price: "€ 16.00 - € 26.00" },
+                { name: "Hazelnut Caramel & Vacherin", desc: "Hazelnut ice cream, roasted Piemonte hazelnuts & meringue", price: "€ 18.00" },
+                { name: "Handcrafted Fruit Sorbet (1/2 L)", desc: "Fresh fruit sorbet: Exotic, raspberry, cherry", price: "€ 6.50" },
+                { name: "Handcrafted Ice Cream (1/2 L - 1 L)", desc: "Strawberry, stracciatella, mocha, pistachio, chocolate, vanilla", price: "€ 6.50 - € 11.00" }
             ]
         }
     }
