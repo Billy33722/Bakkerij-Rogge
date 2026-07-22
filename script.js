@@ -18,7 +18,7 @@ const translations = {
         hero_btn_route: "Route plannen",
         info_address_title: "Adres",
         info_hours_title: "Openingstijden",
-        info_hours_val: "Geopend vanaf 07:30\n(Vr - Zo)",
+        info_hours_val: "Vr - Zo: 07:30 – 18:00\n(Ma - Do: Gesloten)",
         info_phone_title: "Telefoon",
         info_price_title: "Gemiddelde prijs",
         info_price_val: "1 – 10 € per persoon",
@@ -63,7 +63,7 @@ const translations = {
         hero_btn_route: "Get Directions",
         info_address_title: "Address",
         info_hours_title: "Opening Hours",
-        info_hours_val: "Open from 07:30\n(Fri - Sun)",
+        info_hours_val: "Fri - Sun: 07:30 – 18:00\n(Mon - Thu: Closed)",
         info_phone_title: "Phone",
         info_price_title: "Average Price",
         info_price_val: "€1 – €10 per person",
@@ -284,11 +284,13 @@ function initMobileMenu() {
 
     if (toggleBtn && navMenu) {
         toggleBtn.addEventListener('click', () => {
+            toggleBtn.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
 
         navMenu.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
+                toggleBtn.classList.remove('active');
                 navMenu.classList.remove('active');
             });
         });
